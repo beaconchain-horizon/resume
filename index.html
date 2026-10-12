@@ -4,106 +4,54 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>مهدی آملی مقدم — رزومه‌ی حرفه‌ای</title>
+<meta name="description" content="رزومه‌ی حرفه‌ای مهدی آملی مقدم — توسعه‌دهنده‌ی سیستم‌های رمزنگاری و بلاکچین سازمانی">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:linear-gradient(135deg,#0a1628,#1a2942);color:#eef2ff;font-family:Tahoma,Vazirmatn,sans-serif;line-height:1.85;padding:0 0 60px;min-height:100vh}
 .container{max-width:920px;margin:30px auto;background:rgba(20,32,55,.92);border:1px solid rgba(79,158,255,.3);border-radius:16px;padding:50px 60px;box-shadow:0 20px 60px rgba(0,0,0,.3)}
-
-/* Header */
 .header{text-align:center;padding-bottom:28px;border-bottom:2px solid rgba(79,158,255,.3);margin-bottom:30px}
-.name{color:#4f9eff;font-size:2rem;font-weight:700;margin-bottom:8px;letter-spacing:.5px}
+.name{color:#4f9eff;font-size:2rem;font-weight:700;margin-bottom:8px}
 .title{color:#c084fc;font-size:1.05rem;margin-bottom:18px}
-.contact{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;font-size:.85rem;color:#cbd5e1;direction:ltr}
-.contact span{display:inline-flex;align-items:center;gap:6px}
+.contact{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;font-size:.85rem;color:#cbd5e1}
 .contact a{color:#4ade80;text-decoration:none;border-bottom:1px dotted rgba(74,222,128,.4)}
-.contact a:hover{color:#4f9eff;border-bottom-color:#4f9eff}
-
-/* Sections */
+.contact a:hover{color:#4f9eff}
 h2{color:#c084fc;font-size:1.2rem;margin:32px 0 14px;padding-right:14px;border-right:4px solid #c084fc;display:flex;align-items:center;gap:10px}
-h2 .icon{font-size:1.3rem}
-
-/* Summary */
 .summary{background:rgba(79,158,255,.08);border:1px solid rgba(79,158,255,.2);border-radius:12px;padding:22px 26px;color:#cbd5e1;font-size:.95rem;line-height:2}
-
-/* Experience */
 .job{margin-bottom:26px;padding-right:16px;border-right:2px solid rgba(79,158,255,.25);position:relative}
 .job::before{content:'';position:absolute;right:-8px;top:8px;width:12px;height:12px;background:#4f9eff;border-radius:50%;box-shadow:0 0 12px rgba(79,158,255,.6)}
 .job-header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;margin-bottom:8px}
 .job-title{color:#eef2ff;font-size:1.05rem;font-weight:700}
 .job-company{color:#4ade80;font-size:.9rem;margin-right:10px}
 .job-date{color:#8fa2dc;font-size:.82rem;font-family:Consolas,monospace;direction:ltr}
-.job ul{list-style:none;padding-right:0}
+.job ul{list-style:none}
 .job li{padding-right:22px;position:relative;margin:6px 0;color:#cbd5e1;font-size:.88rem}
 .job li::before{content:'▸';position:absolute;right:0;color:#4f9eff}
 .job li strong{color:#eef2ff}
 .job a{color:#4f9eff;text-decoration:none;border-bottom:1px dotted}
 .job a:hover{color:#4ade80}
-
-/* Skills */
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:14px}
 .skill-card{background:rgba(10,22,40,.5);border:1px solid rgba(79,158,255,.15);border-radius:10px;padding:14px 18px}
 .skill-card h3{color:#4ade80;font-size:.85rem;margin-bottom:8px;font-weight:700}
 .skill-card p{color:#cbd5e1;font-size:.82rem;line-height:1.7;direction:ltr;text-align:left}
-
-/* Certifications */
-.cert-list{display:flex;flex-direction:column;gap:8px;margin-top:10px}
-.cert{background:rgba(79,158,255,.06);border-right:3px solid #4ade80;padding:10px 16px;border-radius:6px;display:flex;justify-content:space-between;align-items:center;gap:10px}
-.cert-name{color:#cbd5e1;font-size:.87rem}
-.cert-date{color:#8fa2dc;font-size:.78rem;font-family:Consolas,monospace;direction:ltr;white-space:nowrap}
 .cert-group{margin-bottom:20px}
 .cert-group h3{color:#a78bfa;font-size:.92rem;margin-bottom:8px;font-weight:600}
-
-/* Languages */
+.cert-list{display:flex;flex-direction:column;gap:8px}
+.cert{background:rgba(79,158,255,.06);border-right:3px solid #4ade80;padding:10px 16px;border-radius:6px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.cert-name{color:#cbd5e1;font-size:.87rem}
+.cert-date{color:#8fa2dc;font-size:.78rem;font-family:Consolas,monospace;direction:ltr}
 .lang-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
 .lang-item{background:rgba(10,22,40,.5);border-radius:10px;padding:14px 18px;border-right:3px solid #c084fc}
 .lang-name{color:#eef2ff;font-weight:700;margin-bottom:4px}
 .lang-level{color:#8fa2dc;font-size:.82rem}
-
-/* Links */
 .links-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:12px}
-.link-card{background:rgba(79,158,255,.08);border:1px solid rgba(79,158,255,.25);border-radius:10px;padding:14px 18px;text-decoration:none;color:#eef2ff;transition:all .2s;text-align:center}
+.link-card{background:rgba(79,158,255,.08);border:1px solid rgba(79,158,255,.25);border-radius:10px;padding:14px 18px;text-decoration:none;color:#eef2ff;transition:all .2s;text-align:center;display:block}
 .link-card:hover{background:rgba(79,158,255,.15);border-color:#4f9eff;transform:translateY(-2px)}
 .link-card .label{display:block;color:#4ade80;font-size:.78rem;margin-bottom:4px;font-weight:700}
-.link-card .url{display:block;color:#8fa2dc;font-size:.72rem;direction:ltr;font-family:Consolas,monospace;word-break:break-all}
-
-/* Footer */
+.link-card .url{display:block;color:#8fa2dc;font-size:.7rem;direction:ltr;font-family:Consolas,monospace;word-break:break-all}
 .footer{text-align:center;color:#8fa2dc;font-size:.8rem;margin-top:50px;padding-top:24px;border-top:1px solid rgba(79,158,255,.15)}
 .footer .print-hint{background:rgba(74,222,128,.1);border:1px solid rgba(74,222,128,.3);color:#4ade80;padding:10px 18px;border-radius:8px;display:inline-block;margin-bottom:12px;font-size:.82rem}
-
-@media print{
-  body{background:#fff;color:#000;padding:0}
-  .container{background:#fff;border:none;box-shadow:none;margin:0;padding:20px;max-width:100%}
-  .name{color:#1a4480}
-  .title{color:#5c2d91}
-  h2{color:#5c2d91;border-color:#5c2d91}
-  .job-title{color:#000}
-  .job-company{color:#2a5c2a}
-  .job::before{background:#1a4480}
-  .job{border-color:#ccc}
-  .summary{background:#f5f5f5;border-color:#ccc;color:#000}
-  .skill-card{background:#f9f9f9;border-color:#ddd}
-  .skill-card h3{color:#2a5c2a}
-  .skill-card p{color:#333}
-  .cert{background:#f9f9f9;border-color:#2a5c2a}
-  .cert-name{color:#333}
-  .cert-date{color:#666}
-  .lang-item{background:#f9f9f9;border-color:#5c2d91}
-  .link-card{background:#f9f9f9;border-color:#ccc;color:#000}
-  .link-card .label{color:#2a5c2a}
-  .link-card .url{color:#666}
-  .footer{color:#666}
-  .footer .print-hint{display:none}
-  a{color:#1a4480;text-decoration:none}
-}
-
-@media(max-width:640px){
-  .container{padding:24px 20px;margin:15px;border-radius:12px}
-  .name{font-size:1.5rem}
-  .contact{flex-direction:column;align-items:center;gap:8px}
-  h2{font-size:1.05rem}
-  .job-header{flex-direction:column;align-items:flex-start;gap:4px}
-  .lang-grid{grid-template-columns:1fr}
-}
+@media print{body{background:#fff;color:#000;padding:0}.container{background:#fff;border:none;box-shadow:none;margin:0;padding:20px;max-width:100%}.name,.title,h2,.job-title{color:#000}h2{border-color:#000}.summary,.skill-card,.cert,.lang-item,.link-card{background:#f9f9f9;border-color:#ccc;color:#000}.footer{color:#666}.footer .print-hint{display:none}a{color:#1a4480}}
+@media(max-width:640px){.container{padding:24px 20px;margin:15px;border-radius:12px}.name{font-size:1.5rem}.contact{flex-direction:column;align-items:center;gap:8px}.lang-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -119,19 +67,16 @@ h2 .icon{font-size:1.3rem}
   </div>
 </div>
 
-<h2><span class="icon">👤</span> خلاصه‌ی حرفه‌ای</h2>
+<h2>👤 خلاصه‌ی حرفه‌ای</h2>
 <div class="summary">
 طراح و پیاده‌ساز <strong>Horizon Core v1.4</strong> — یک لایه‌ی اثبات‌پذیری و حاکمیت داده برای بانکداری، صنعت، و محیط‌های air-gap. تخصص اصلی در رمزنگاری کاربردی (ECDSA روی secp256k1، Merkle Tree بر پایه‌ی RFC 6962)، طراحی پروتکل‌های قابل اثبات، و پیاده‌سازی سیستم‌هایی که به‌صورت کامل آفلاین کار می‌کنند. تجربه‌ی بین‌المللی در انطباق با استانداردهای حفاظت داده (GDPR، SCC) از طریق همکاری رسمی با <strong>GB Group Plc</strong> (انگلستان). رویکرد کاری: مستندسازی، تست‌محوری، و شفافیت کامل در محدودیت‌ها.
 </div>
 
-<h2><span class="icon">💼</span> تجربه‌ی کاری</h2>
+<h2>💼 تجربه‌ی کاری</h2>
 
 <div class="job">
   <div class="job-header">
-    <div>
-      <span class="job-title">Horizon Core v1.4</span>
-      <span class="job-company">— Beaconchain.com</span>
-    </div>
+    <div><span class="job-title">Horizon Core v1.4</span> <span class="job-company">— Beaconchain.com</span></div>
     <div class="job-date">2019 — Present</div>
   </div>
   <ul>
@@ -143,16 +88,13 @@ h2 .icon{font-size:1.3rem}
     <li>پشتیبانی همزمان از <strong>PostgreSQL</strong> (محیط آنلاین) و <strong>SQLite</strong> (محیط آفلاین) با قابلیت یکسان</li>
     <li>همکاری در ارزیابی امنیتی مستقل: <strong>۱۹۲ تست نفوذ در ۱۲ دسته</strong>، همه با موفقیت مسدود</li>
     <li>مستندسازی کامل: قرارداد رمزنگاری، الزامات استقرار، دستنامه‌ی عملیات، انطباق قانونی</li>
-    <li>مخزن عمومی: <a href="https://github.com/beaconchain-horizon/horizon-core" target="_blank">github.com/beaconchain-horizon/horizon-core</a></li>
+    <li>نمایش عمومی و اسناد فنی: <a href="https://beaconchain-horizon.github.io/horizon-security-assessment/" target="_blank">beaconchain-horizon.github.io/horizon-security-assessment/</a></li>
   </ul>
 </div>
 
 <div class="job">
   <div class="job-header">
-    <div>
-      <span class="job-title">همکاری بین‌المللی — GB Group Plc</span>
-      <span class="job-company">— انگلستان</span>
-    </div>
+    <div><span class="job-title">همکاری بین‌المللی — GB Group Plc</span> <span class="job-company">— انگلستان</span></div>
     <div class="job-date">2020</div>
   </div>
   <ul>
@@ -160,50 +102,25 @@ h2 .icon{font-size:1.3rem}
     <li>اجرای توافق‌نامه‌ی انتقال داده بین اتحادیه‌ی اروپا و بریتانیا در چارچوب <strong>GDPR Article 44</strong></li>
     <li>کار با سند رسمی دو زبانه، کاملاً منطبق با الزامات حقوقی بریتانیا و اتحادیه‌ی اروپا</li>
     <li>طرف مقابل: Natasha Maddock — Head of Legal در GB Group Plc</li>
-    <li>مبنای حقوقی: حفاظت از داده، انطباق با مقررات بین‌المللی، معماری امنیتی پردازش داده</li>
   </ul>
 </div>
 
-<h2><span class="icon">⚙️</span> مهارت‌های فنی</h2>
+<h2>⚙️ مهارت‌های فنی</h2>
 <div class="skills-grid">
-  <div class="skill-card">
-    <h3>زبان‌های برنامه‌نویسی</h3>
-    <p>Go, JavaScript, Python, SQL, HTML/CSS</p>
-  </div>
-  <div class="skill-card">
-    <h3>رمزنگاری و امنیت</h3>
-    <p>ECDSA (secp256k1), SHA-256, RFC 6979, RFC 6962, Merkle Tree, Digital Signature</p>
-  </div>
-  <div class="skill-card">
-    <h3>دیتابیس</h3>
-    <p>PostgreSQL, SQLite (WAL), GORM, Data Modeling</p>
-  </div>
-  <div class="skill-card">
-    <h3>شبکه و API</h3>
-    <p>REST, Gin Framework, CORS, TLS, OAuth2, JWT</p>
-  </div>
-  <div class="skill-card">
-    <h3>زیرساخت و ابزار</h3>
-    <p>Docker, Linux, Git, GitHub Actions, Bash</p>
-  </div>
-  <div class="skill-card">
-    <h3>سیستم‌های صنعتی</h3>
-    <p>SCADA, Historian, ISA-95 / Purdue Model, OPC-UA, Modbus TCP</p>
-  </div>
-  <div class="skill-card">
-    <h3>Cloud (Microsoft)</h3>
-    <p>Azure, Microsoft Graph, Microsoft 365, Purview, Power Platform</p>
-  </div>
-  <div class="skill-card">
-    <h3>انطباق و استاندارد</h3>
-    <p>GDPR, SCC, ISO/IEC 27001 (در حال آماده‌سازی), RFC Compliance</p>
-  </div>
+  <div class="skill-card"><h3>زبان‌های برنامه‌نویسی</h3><p>Go, JavaScript, Python, SQL, HTML/CSS</p></div>
+  <div class="skill-card"><h3>رمزنگاری و امنیت</h3><p>ECDSA (secp256k1), SHA-256, RFC 6979, RFC 6962, Merkle Tree, Digital Signature</p></div>
+  <div class="skill-card"><h3>دیتابیس</h3><p>PostgreSQL, SQLite (WAL), GORM, Data Modeling</p></div>
+  <div class="skill-card"><h3>شبکه و API</h3><p>REST, Gin Framework, CORS, TLS, OAuth2, JWT</p></div>
+  <div class="skill-card"><h3>زیرساخت و ابزار</h3><p>Docker, Linux, Git, GitHub Actions, Bash</p></div>
+  <div class="skill-card"><h3>سیستم‌های صنعتی</h3><p>SCADA, Historian, ISA-95 / Purdue Model, OPC-UA, Modbus TCP</p></div>
+  <div class="skill-card"><h3>Cloud (Microsoft)</h3><p>Azure, Microsoft Graph, Microsoft 365, Purview, Power Platform</p></div>
+  <div class="skill-card"><h3>انطباق و استاندارد</h3><p>GDPR, SCC, ISO/IEC 27001 (در حال آماده‌سازی), RFC Compliance</p></div>
 </div>
 
-<h2><span class="icon">🎓</span> گواهی‌ها و دوره‌های تخصصی</h2>
+<h2>🎓 گواهی‌ها و دوره‌های تخصصی</h2>
 
 <div class="cert-group">
-  <h3>Microsoft Learn — تروفی‌ها (۵ مورد)</h3>
+  <h3>Microsoft Learn — تروفی‌ها</h3>
   <div class="cert-list">
     <div class="cert"><span class="cert-name">Microsoft Graph Fundamentals</span><span class="cert-date">Nov 2023</span></div>
     <div class="cert"><span class="cert-name">Azure: مدیریت و راهبری</span><span class="cert-date">Oct 2023</span></div>
@@ -214,7 +131,7 @@ h2 .icon{font-size:1.3rem}
 </div>
 
 <div class="cert-group">
-  <h3>Microsoft Learn — نشان‌های امنیت و انطباق</h3>
+  <h3>Microsoft Learn — امنیت و انطباق</h3>
   <div class="cert-list">
     <div class="cert"><span class="cert-name">GitHub Advanced Security Management</span><span class="cert-date">Nov 2023</span></div>
     <div class="cert"><span class="cert-name">Microsoft Purview — حفاظت اطلاعات و چرخه‌ی عمر داده</span><span class="cert-date">May 2023</span></div>
@@ -246,23 +163,37 @@ h2 .icon{font-size:1.3rem}
   </div>
 </div>
 
-<h2><span class="icon">🌐</span> زبان‌ها</h2>
+<h2>🌐 زبان‌ها</h2>
 <div class="lang-grid">
-  <div class="lang-item">
-    <div class="lang-name">فارسی</div>
-    <div class="lang-level">زبان مادری</div>
-  </div>
-  <div class="lang-item">
-    <div class="lang-name">انگلیسی</div>
-    <div class="lang-level">فنی — توانایی خواندن و نوشتن مستندات فنی و حقوقی بین‌المللی</div>
-  </div>
+  <div class="lang-item"><div class="lang-name">فارسی</div><div class="lang-level">زبان مادری</div></div>
+  <div class="lang-item"><div class="lang-name">انگلیسی</div><div class="lang-level">فنی — خواندن و نوشتن مستندات فنی و حقوقی بین‌المللی</div></div>
 </div>
 
-<h2><span class="icon">🔗</span> پروفایل‌های حرفه‌ای و لینک‌های مرتبط</h2>
+<h2>🔗 پروفایل‌ها و لینک‌های مرتبط</h2>
 <div class="links-grid">
-  <a class="link-card" href="https://github.com/beaconchain-horizon" target="_blank">
-    <span class="label">GitHub</span>
-    <span class="url">github.com/beaconchain-horizon</span>
+  <a class="link-card" href="https://beaconchain-horizon.github.io/horizon-security-assessment/" target="_blank">
+    <span class="label">اسناد فنی و ارزیابی</span>
+    <span class="url">beaconchain-horizon.github.io/horizon-security-assessment</span>
+  </a>
+  <a class="link-card" href="https://beaconchain-horizon.github.io/horizon-security-assessment/positioning.html" target="_blank">
+    <span class="label">جایگاه استقرار</span>
+    <span class="url">positioning.html</span>
+  </a>
+  <a class="link-card" href="https://beaconchain-horizon.github.io/horizon-security-assessment/deployment.html" target="_blank">
+    <span class="label">الزامات استقرار</span>
+    <span class="url">deployment.html</span>
+  </a>
+  <a class="link-card" href="https://beaconchain-horizon.github.io/horizon-security-assessment/operations.html" target="_blank">
+    <span class="label">عملیات و SLA</span>
+    <span class="url">operations.html</span>
+  </a>
+  <a class="link-card" href="https://beaconchain-horizon.github.io/horizon-security-assessment/compliance.html" target="_blank">
+    <span class="label">انطباق و استناد قانونی</span>
+    <span class="url">compliance.html</span>
+  </a>
+  <a class="link-card" href="https://beaconchain-horizon.github.io/horizon-security-assessment/offline-license.html" target="_blank">
+    <span class="label">امضای آفلاین (USB)</span>
+    <span class="url">offline-license.html</span>
   </a>
   <a class="link-card" href="https://learn.microsoft.com/en-us/users/capitalmarkets-0675/" target="_blank">
     <span class="label">Microsoft Learn</span>
@@ -271,14 +202,6 @@ h2 .icon{font-size:1.3rem}
   <a class="link-card" href="https://experts.godaddy.com/mahdi-amolimoghaddam" target="_blank">
     <span class="label">GoDaddy Experts</span>
     <span class="url">experts.godaddy.com/mahdi-amolimoghaddam</span>
-  </a>
-  <a class="link-card" href="https://github.com/beaconchain-horizon/horizon-core" target="_blank">
-    <span class="label">Horizon Core</span>
-    <span class="url">github.com/…/horizon-core</span>
-  </a>
-  <a class="link-card" href="https://beaconchain-horizon.github.io/horizon-security-assessment/" target="_blank">
-    <span class="label">ارزیابی امنیتی</span>
-    <span class="url">beaconchain-horizon.github.io/…</span>
   </a>
 </div>
 
